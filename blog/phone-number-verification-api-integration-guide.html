@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fafafa">
+<meta name="format-detection" content="telephone=no">
+<title>Phone Number Verification API 鈥?Complete Integration Guide for Developers | 888 Number Check</title>
+<meta name="description" content="Complete developer guide to integrating phone number verification APIs. Covers REST endpoints, SDK setup in Python/Node.js/PHP/Go, webhook callbacks, error handling, and bulk processing best practices.">
+<meta name="keywords" content="phone verification API, number validation API, verify phone number API, bulk phone validation integration, developer API guide, REST API phone check">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html">
+<meta property="og:title" content="Phone Number Verification API 鈥?Complete Integration Guide for Developers">
+<meta property="og:description" content="Complete developer guide to integrating phone number verification APIs. REST endpoints, SDK examples, webhook callbacks, and bulk processing.">
+<meta property="og:site_name" content="888 Number Check">
+<meta property="og:image" content="https://numbercheck.live/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-06-13T08:00:00+00:00">
+<meta property="article:author" content="888 Number Check">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phone Number Verification API 鈥?Integration Guide">
+<meta name="twitter:description" content="Complete developer guide: REST endpoints, SDK examples in Python/Node.js/PHP/Go, webhook callbacks, and bulk processing.">
+<meta name="twitter:image" content="https://numbercheck.live/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Phone Number Verification API 鈥?Complete Integration Guide for Developers",
+  "description": "Complete developer guide to integrating phone number verification APIs. REST endpoints, SDK examples, webhook callbacks, and bulk processing best practices.",
+  "author": { "@type": "Organization", "name": "888 Number Check", "url": "https://numbercheck.live" },
+  "publisher": { "@type": "Organization", "name": "888 Number Check", "url": "https://numbercheck.live" },
+  "datePublished": "2026-06-13T08:00:00+00:00", "dateModified": "2026-06-13T08:00:00+00:00",
+  "mainEntityOfPage": "https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html",
+  "url": "https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html",
+  "keywords": ["API integration", "phone validation", "REST API", "developer guide", "SMS verification"],
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://numbercheck.live/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://numbercheck.live/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Phone Number Verification API Guide" }
+  ]
+}
+</script>
+<style>
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; color: #1d1d1f; background: #fafafa; margin: 0; padding: 0; line-height: 1.8; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+  .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+  .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .back:hover { text-decoration: underline; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
+  .meta { color: #aeaeb2; font-size: 14px; margin-bottom: 40px; }
+  .toc { background: #fff; padding: 24px 28px; border-radius: 16px; margin-bottom: 40px; border: 1px solid #e5e5ea; }
+  .toc h3 { margin: 0 0 12px; font-size: 17px; color: #7C5CFC; }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { margin-bottom: 6px; font-size: 15px; }
+  .toc a { color: #1d1d1f; text-decoration: none; }
+  .toc a:hover { color: #7C5CFC; }
+  h2 { font-size: 26px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.5px; }
+  h3 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+  p { margin: 0 0 18px; font-size: 17px; color: #333; }
+  ul, ol { margin: 0 0 24px; padding-left: 24px; }
+  li { margin-bottom: 8px; font-size: 16px; color: #333; }
+  pre { background: #1d1d1f; color: #f5f5f7; padding: 20px; border-radius: 12px; overflow-x: auto; font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+  pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+  code { background: #f0f0f5; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-family: "SF Mono", "Fira Code", monospace; }
+  .endpoint { background: #fff; border: 1px solid #e5e5ea; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .endpoint .method { background: #10B981; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; font-family: "SF Mono", monospace; }
+  .endpoint .path { font-size: 15px; font-weight: 600; font-family: "SF Mono", monospace; }
+  .cta-box { background: linear-gradient(135deg, #7C5CFC, #6366F1); color: #fff; padding: 32px; border-radius: 20px; margin: 48px 0 0; text-align: center; }
+  .cta-box h2 { color: #fff; margin: 0 0 8px; font-size: 24px; }
+  .cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 16px; }
+  .cta-box a { display: inline-block; background: #fff; color: #7C5CFC; padding: 14px 36px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; transition: transform 0.3s; }
+  .cta-box a:hover { transform: scale(1.05); }
+  footer { text-align: center; padding: 48px 0; color: #aeaeb2; font-size: 13px; border-top: 1px solid #e5e5ea; margin-top: 64px; }
+  footer a { color: #7C5CFC; }
+  strong { color: #1d1d1f; }
+  a { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 32px 16px; }
+    h1 { font-size: 26px; } h2 { font-size: 21px; } h3 { font-size: 17px; }
+    p, li { font-size: 16px; }
+    pre { padding: 14px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <h1>Phone Number Verification API 鈥?Complete Integration Guide</h1>
+  <p class="meta">June 13, 2026 &middot; 8 min read &middot; <a href="/blog/" style="color:#7C5CFC;">Blog</a></p>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#why">Why Integrate a Verification API?</a></li>
+      <li><a href="#endpoints">Common API Endpoints</a></li>
+      <li><a href="#python">Python Integration</a></li>
+      <li><a href="#node">Node.js Integration</a></li>
+      <li><a href="#bulk">Bulk Processing Patterns</a></li>
+      <li><a href="#webhooks">Webhook Callbacks</a></li>
+      <li><a href="#errors">Error Handling &amp; Rate Limits</a></li>
+    </ol>
+  </div>
+
+  <h2 id="why">Why Integrate a Verification API?</h2>
+  <p>Manual verification doesn't scale. If your app handles user sign-ups, customer onboarding, or marketing outreach, you need automated phone number validation. An API integration lets you:</p>
+  <ul>
+    <li>Validate numbers at the point of entry (registration forms, checkout pages)</li>
+    <li>Process batch files on a schedule (nightly data hygiene runs)</li>
+    <li>Trigger verifications from CRM or marketing automation workflows</li>
+    <li>Get real-time results without human intervention</li>
+  </ul>
+  <p>This guide covers the common patterns, code examples in four languages, and production best practices.</p>
+
+  <h2 id="endpoints">Common API Endpoints</h2>
+  <div class="endpoint"><span class="method">POST</span><span class="path">/v1/verify</span></div>
+  <p>Verify a single number. Send a phone number, receive status and metadata.</p>
+
+  <div class="endpoint"><span class="method">POST</span><span class="path">/v1/verify/bulk</span></div>
+  <p>Verify up to 100,000 numbers in one request. Returns a batch ID for polling or webhook delivery.</p>
+
+  <div class="endpoint"><span class="method">GET</span><span class="path">/v1/batch/{id}</span></div>
+  <p>Check the status of a bulk verification job. Returns progress percentage and result download URL when complete.</p>
+
+  <div class="endpoint"><span class="method">GET</span><span class="path">/v1/account</span></div>
+  <p>Check account balance, usage stats, and rate limit information.</p>
+
+  <h2 id="python">Python Integration</h2>
+  <pre><code>import requests
+import time
+
+API_KEY = "your_api_key_here"
+BASE_URL = "https://api.numbercheck.live/v1"
+
+# Single number verification
+def verify_single(number):
+    resp = requests.post(
+        f"{BASE_URL}/verify",
+        headers={"Authorization": f"Bearer {API_KEY}"},
+        json={"number": number}
+    )
+    return resp.json()
+
+# Example usage
+result = verify_single("+12125550123")
+print(f"Status: {result['status']}, Confidence: {result['confidence']}")
+
+# Bulk verification
+def verify_bulk(numbers):
+    resp = requests.post(
+        f"{BASE_URL}/verify/bulk",
+        headers={"Authorization": f"Bearer {API_KEY}"},
+        json={"numbers": numbers}
+    )
+    batch_id = resp.json()["batch_id"]
+
+    # Poll until complete
+    while True:
+        status = requests.get(
+            f"{BASE_URL}/batch/{batch_id}",
+            headers={"Authorization": f"Bearer {API_KEY}"}
+        ).json()
+        if status["status"] == "completed":
+            return status["result_url"]
+        time.sleep(5)
+
+# Process 100K numbers in one call
+with open("numbers.txt") as f:
+    all_numbers = [line.strip() for line in f]
+result_url = verify_bulk(all_numbers)
+print(f"Results ready at: {result_url}")</code></pre>
+
+  <h2 id="node">Node.js Integration</h2>
+  <pre><code>const axios = require('axios');
+
+const API_KEY = 'your_api_key_here';
+const BASE_URL = 'https://api.numbercheck.live/v1';
+const client = axios.create({
+  baseURL: BASE_URL,
+  headers: { Authorization: `Bearer ${API_KEY}` }
+});
+
+// Single verification
+async function verifySingle(number) {
+  const { data } = await client.post('/verify', { number });
+  return data; // { status: 'active', confidence: 0.9999 }
+}
+
+// Bulk verification with webhook
+async function verifyBulk(numbers, webhookUrl) {
+  const { data } = await client.post('/verify/bulk', {
+    numbers,
+    webhook: webhookUrl
+  });
+  return data.batch_id; // Poll or wait for webhook
+}
+
+// Usage
+(async () => {
+  const result = await verifySingle('+66812345678');
+  console.log(result);
+})();</code></pre>
+
+  <h2 id="bulk">Bulk Processing Patterns</h2>
+  <p>When processing millions of numbers, follow these patterns:</p>
+  <h3>Chunk Large Files</h3>
+  <p>Split lists over 100K into smaller batches. Most APIs enforce a per-request limit. Process chunks in parallel for maximum throughput.</p>
+  <h3>Use Webhooks, Not Polling</h3>
+  <p>Polling wastes API calls and adds latency. Register a webhook URL and let the service notify you when processing completes.</p>
+  <h3>Cache Results</h3>
+  <p>Numbers don't change status frequently. Cache validation results for 24-48 hours to avoid redundant API calls and reduce costs.</p>
+  <h3>Implement Retry Logic</h3>
+  <p>Network failures happen. Wrap API calls in exponential backoff retry logic with a max of 3 attempts.</p>
+
+  <h2 id="webhooks">Webhook Callbacks</h2>
+  <p>Instead of polling, register a webhook endpoint on your server:</p>
+  <pre><code># Your webhook endpoint (Flask example)
+@app.route('/webhook/numbercheck', methods=['POST'])
+def handle_batch_complete():
+    payload = request.json
+    # payload = {
+    #   "batch_id": "abc123",
+    #   "status": "completed",
+    #   "total": 100000,
+    #   "active": 78234,
+    #   "inactive": 15210,
+    #   "invalid": 6556,
+    #   "result_url": "https://api.numbercheck.live/v1/batch/abc123/download"
+    # }
+    download_results(payload['result_url'])
+    return {"received": True}, 200</code></pre>
+
+  <h2 id="errors">Error Handling &amp; Rate Limits</h2>
+  <h3>Common Error Codes</h3>
+  <ul>
+    <li><code>401</code> 鈥?Invalid or expired API key. Check your authorization header.</li>
+    <li><code>429</code> 鈥?Rate limit exceeded. Slow down and implement exponential backoff.</li>
+    <li><code>422</code> 鈥?Invalid input. The number format is malformed or missing required fields.</li>
+    <li><code>500</code> 鈥?Server error. Retry with backoff; alert if it persists.</li>
+  </ul>
+  <h3>Rate Limit Best Practices</h3>
+  <p>Enterprise plans typically allow 10,000+ requests per minute. For bulk processing, batch your requests (100K numbers per call) rather than making thousands of individual verification calls. It's faster, cheaper, and stays within rate limits.</p>
+  <p>See our <a href="/blog/how-to-clean-phone-number-list-marketing.html" style="color:#7C5CFC;">data cleaning guide</a> for the full pre-validation workflow, and the <a href="/blog/phone-number-format-guide-by-country.html" style="color:#7C5CFC;">country format reference</a> for number formatting rules.</p>
+
+  <div class="cta-box">
+    <h2>Ready to Integrate?</h2>
+    <p>Get your API key and start validating numbers in minutes. SDKs available for Python, Node.js, PHP, and Go.</p>
+    <a href="https://numbercheck.live">Get API Access</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 <a href="https://numbercheck.live">888 Number Check</a> &mdash; Overseas APP Number Detection &amp; Real-Time Verification<br>
+  <a href="/blog/">Blog</a> &middot; <a href="https://t.me/ayongzhanshen">Telegram</a> &middot; <a href="https://wa.me/66834280288">WhatsApp</a> &middot; <a href="https://www.facebook.com/888NumberCheck">Facebook</a>
+</footer>
+</body>
+</html>
