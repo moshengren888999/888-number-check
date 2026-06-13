@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fafafa">
+<meta name="format-detection" content="telephone=no">
+<title>Free SMS Marketing ROI Calculator 鈥?See How Much Bad Data Costs You | 888 Number Check</title>
+<meta name="description" content="Calculate how much inactive phone numbers cost your SMS campaigns. Find your potential savings with list validation. Free interactive tool, no sign-up required.">
+<meta name="keywords" content="SMS ROI calculator, SMS marketing cost calculator, calculate SMS campaign savings, phone list cleaning ROI, SMS marketing waste">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://numbercheck.live/tools/sms-roi-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://numbercheck.live/tools/sms-roi-calculator.html">
+<meta property="og:title" content="Free SMS Marketing ROI Calculator 鈥?See What Bad Data Costs You">
+<meta property="og:description" content="Calculate how much invalid phone numbers cost your campaigns. See potential savings with list validation.">
+<meta property="og:site_name" content="888 Number Check">
+<meta property="og:image" content="https://numbercheck.live/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SMS Marketing ROI Calculator">
+<meta name="twitter:description" content="Free tool to calculate how much bad data costs your SMS campaigns.">
+<meta name="twitter:image" content="https://numbercheck.live/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SMS Marketing ROI Calculator",
+  "url": "https://numbercheck.live/tools/sms-roi-calculator.html",
+  "description": "Free interactive tool to calculate the cost of invalid phone numbers in SMS campaigns and potential savings from list cleaning.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://numbercheck.live/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://numbercheck.live/tools/" },
+    { "@type": "ListItem", "position": 3, "name": "SMS ROI Calculator" }
+  ]
+}
+</script>
+<style>
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; color: #1d1d1f; background: #fafafa; margin: 0; padding: 0; line-height: 1.8; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+  .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+  .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .back:hover { text-decoration: underline; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
+  .sub { color: #6e6e73; font-size: 17px; margin-bottom: 32px; }
+  .calc-box { background: #fff; border-radius: 24px; padding: 36px; border: 1px solid #e5e5ea; margin-bottom: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.04); }
+  .input-group { margin-bottom: 20px; }
+  .input-group label { display: block; font-size: 15px; font-weight: 600; margin-bottom: 6px; color: #1d1d1f; }
+  .input-group .hint { font-size: 13px; color: #aeaeb2; margin-bottom: 8px; }
+  .input-group input[type="range"] { width: 100%; accent-color: #7C5CFC; }
+  .input-group .range-labels { display: flex; justify-content: space-between; font-size: 12px; color: #aeaeb2; }
+  .input-group .value-display { font-size: 24px; font-weight: 700; color: #7C5CFC; display: inline-block; min-width: 80px; }
+  .results { display: none; margin-top: 28px; }
+  .results.show { display: block; }
+  .result-card { padding: 20px 24px; border-radius: 16px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .result-card.waste { background: #fef2f2; border: 1px solid #fecaca; }
+  .result-card.saving { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .result-card.info { background: #f0f0f5; border: 1px solid #e5e5ea; }
+  .result-label { font-size: 15px; font-weight: 600; }
+  .result-value { font-size: 22px; font-weight: 800; }
+  .result-card.waste .result-value { color: #dc2626; }
+  .result-card.saving .result-value { color: #059669; }
+  .chart-bar { height: 8px; background: #f0f0f5; border-radius: 4px; margin-top: 8px; overflow: hidden; }
+  .chart-bar .fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+  .chart-bar .fill.waste { background: #f87171; }
+  .chart-bar .fill.clean { background: #10B981; }
+  h2 { font-size: 26px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.5px; }
+  p { margin: 0 0 18px; font-size: 17px; color: #333; }
+  ul { margin: 0 0 24px; padding-left: 24px; }
+  li { margin-bottom: 8px; font-size: 16px; color: #333; }
+  .cta-box { background: linear-gradient(135deg, #7C5CFC, #6366F1); color: #fff; padding: 32px; border-radius: 20px; margin: 48px 0 0; text-align: center; }
+  .cta-box h2 { color: #fff; margin: 0 0 8px; font-size: 24px; }
+  .cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 16px; }
+  .cta-box a { display: inline-block; background: #fff; color: #7C5CFC; padding: 14px 36px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; transition: transform 0.3s; }
+  .cta-box a:hover { transform: scale(1.05); }
+  footer { text-align: center; padding: 48px 0; color: #aeaeb2; font-size: 13px; border-top: 1px solid #e5e5ea; margin-top: 64px; }
+  footer a { color: #7C5CFC; }
+  a { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 32px 16px; }
+    h1 { font-size: 26px; } h2 { font-size: 21px; }
+    .calc-box { padding: 24px 20px; }
+    .result-value { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <h1>SMS Marketing ROI Calculator</h1>
+  <p class="sub">See how much invalid numbers are costing your campaigns &mdash; and how much you could save with clean data.</p>
+
+  <div class="calc-box">
+    <div class="input-group">
+      <label>List Size: <span class="value-display" id="listSizeVal">50,000</span></label>
+      <div class="hint">How many phone numbers in your contact list?</div>
+      <input type="range" id="listSize" min="1000" max="1000000" step="1000" value="50000" oninput="updateCalc()">
+      <div class="range-labels"><span>1,000</span><span>1,000,000</span></div>
+    </div>
+    <div class="input-group">
+      <label>Cost per SMS: <span class="value-display" id="smsCostVal">$0.03</span></label>
+      <div class="hint">What do you pay per message? (International avg: $0.02-0.05)</div>
+      <input type="range" id="smsCost" min="0.01" max="0.10" step="0.005" value="0.03" oninput="updateCalc()">
+      <div class="range-labels"><span>$0.01</span><span>$0.10</span></div>
+    </div>
+    <div class="input-group">
+      <label>Estimated Invalid Rate: <span class="value-display" id="invalidRateVal">25%</span></label>
+      <div class="hint">What % of your list is inactive or invalid? (Industry avg: 20-30%)</div>
+      <input type="range" id="invalidRate" min="5" max="60" step="1" value="25" oninput="updateCalc()">
+      <div class="range-labels"><span>5%</span><span>60%</span></div>
+    </div>
+    <div class="input-group">
+      <label>Campaigns per Month: <span class="value-display" id="campaignsVal">4</span></label>
+      <div class="hint">How many campaigns do you send per month?</div>
+      <input type="range" id="campaigns" min="1" max="30" step="1" value="4" oninput="updateCalc()">
+      <div class="range-labels"><span>1</span><span>30</span></div>
+    </div>
+
+    <div class="results show" id="results">
+      <div class="result-card waste">
+        <div>
+          <div class="result-label">Wasted per Campaign</div>
+          <div style="font-size:13px;color:#6e6e73;" id="wastedNumbers">12,500 invalid numbers</div>
+        </div>
+        <div class="result-value" id="wastePerCampaign">$375</div>
+      </div>
+      <div class="result-card waste">
+        <div>
+          <div class="result-label">Wasted per Month</div>
+          <div style="font-size:13px;color:#6e6e73;" id="wastedMonthly">50,000 wasted sends</div>
+        </div>
+        <div class="result-value" id="wastePerMonth">$1,500</div>
+      </div>
+      <div class="result-card waste">
+        <div>
+          <div class="result-label">Wasted per Year</div>
+          <div style="font-size:13px;color:#6e6e73;" id="wastedYearly">600,000 wasted sends</div>
+        </div>
+        <div class="result-value" id="wastePerYear">$18,000</div>
+      </div>
+      <div class="result-card saving">
+        <div>
+          <div class="result-label">Savings with Clean Data (99%+ accuracy)</div>
+          <div style="font-size:13px;color:#6e6e73;">After running through validation</div>
+        </div>
+        <div class="result-value" id="savingsYearly">$17,640/year</div>
+      </div>
+      <div style="margin-top:16px;">
+        <div style="font-size:14px;font-weight:600;margin-bottom:4px;">List Health</div>
+        <div class="chart-bar">
+          <div style="display:flex;height:100%;">
+            <div class="fill clean" id="cleanBar" style="width:75%;"></div>
+            <div class="fill waste" id="wasteBar" style="width:25%;"></div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6e6e73;margin-top:4px;">
+          <span id="cleanPct">75% clean</span><span id="wastePct">25% invalid</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>How This Calculator Works</h2>
+  <p>This calculator uses industry benchmarks to estimate how much you're spending on numbers that will never receive your message:</p>
+  <ul>
+    <li><strong>Invalid rate</strong> &mdash; Based on our analysis of millions of numbers, the typical unmaintained contact list has 20-30% invalid or inactive entries.</li>
+    <li><strong>Waste calculation</strong> &mdash; Your cost per message multiplied by the estimated number of invalid sends, scaled to your campaign frequency.</li>
+    <li><strong>Savings projection</strong> &mdash; After cleaning, your invalid rate drops to under 1% (our platform achieves 99.99% accuracy). The savings are the difference.</li>
+  </ul>
+  <p>This doesn't even account for the reputational damage of high bounce rates or the opportunity cost of messages that could have reached real customers. See our <a href="/blog/why-phone-numbers-go-inactive.html" style="color:#7C5CFC;">data decay guide</a> for a deeper analysis.</p>
+
+  <div class="cta-box">
+    <h2>Stop Burning Money on Bad Data</h2>
+    <p>Upload your contact list and get instant validation results. 200+ countries, 99.99% accuracy, results in under 5 minutes.</p>
+    <a href="https://numbercheck.live">Clean My List Now</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 <a href="https://numbercheck.live">888 Number Check</a> &mdash; Overseas APP Number Detection &amp; Real-Time Verification<br>
+  <a href="/tools/">All Tools</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://t.me/ayongzhanshen">Telegram</a> &middot; <a href="https://wa.me/66834280288">WhatsApp</a>
+</footer>
+
+<script>
+function formatNum(n) { return n.toLocaleString('en-US'); }
+function formatMoney(n) { return '$' + n.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
+
+function updateCalc() {
+  const listSize = parseInt(document.getElementById('listSize').value);
+  const smsCost = parseFloat(document.getElementById('smsCost').value);
+  const invalidRate = parseInt(document.getElementById('invalidRate').value) / 100;
+  const campaigns = parseInt(document.getElementById('campaigns').value);
+
+  document.getElementById('listSizeVal').textContent = formatNum(listSize);
+  document.getElementById('smsCostVal').textContent = '$' + smsCost.toFixed(3);
+  document.getElementById('invalidRateVal').textContent = (invalidRate * 100) + '%';
+  document.getElementById('campaignsVal').textContent = campaigns;
+
+  const invalidPerCampaign = Math.round(listSize * invalidRate);
+  const wastePerCampaign = invalidPerCampaign * smsCost;
+  const wastePerMonth = wastePerCampaign * campaigns;
+  const wastePerYear = wastePerMonth * 12;
+
+  // With cleaning: assume 0.01% invalid rate (99.99% accuracy)
+  const cleanedInvalid = Math.round(listSize * 0.0001);
+  const cleanedWastePerCampaign = cleanedInvalid * smsCost;
+  const cleanedWastePerMonth = cleanedWastePerCampaign * campaigns;
+  const cleanedWastePerYear = cleanedWastePerMonth * 12;
+
+  const savingsYearly = wastePerYear - cleanedWastePerYear;
+
+  document.getElementById('wastedNumbers').textContent = formatNum(invalidPerCampaign) + ' invalid numbers';
+  document.getElementById('wastePerCampaign').textContent = formatMoney(wastePerCampaign);
+  document.getElementById('wastedMonthly').textContent = formatNum(invalidPerCampaign * campaigns) + ' wasted sends';
+  document.getElementById('wastePerMonth').textContent = formatMoney(wastePerMonth);
+  document.getElementById('wastedYearly').textContent = formatNum(invalidPerCampaign * campaigns * 12) + ' wasted sends';
+  document.getElementById('wastePerYear').textContent = formatMoney(wastePerYear);
+  document.getElementById('savingsYearly').textContent = formatMoney(savingsYearly) + '/year';
+
+  const cleanPct = Math.round((1 - invalidRate) * 100);
+  document.getElementById('cleanBar').style.width = cleanPct + '%';
+  document.getElementById('wasteBar').style.width = (invalidRate * 100) + '%';
+  document.getElementById('cleanPct').textContent = cleanPct + '% clean';
+  document.getElementById('wastePct').textContent = Math.round(invalidRate * 100) + '% invalid';
+}
+
+// Initialize
+updateCalc();
+</script>
+</body>
+</html>
