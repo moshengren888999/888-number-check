@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fafafa">
+<meta name="format-detection" content="telephone=no">
+<title>Free Phone Number Format Checker 鈥?Validate & Format International Numbers | 888 Number Check</title>
+<meta name="description" content="Free online tool to check phone number format, validate country codes, and convert numbers to E.164 international standard. Supports 200+ countries. Instant results.">
+<meta name="keywords" content="free phone number validator, phone format checker, E.164 converter, international number check, phone number formatter, validate country code">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://numbercheck.live/tools/phone-number-format-checker.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://numbercheck.live/tools/phone-number-format-checker.html">
+<meta property="og:title" content="Free Phone Number Format Checker 鈥?Validate & Format International Numbers">
+<meta property="og:description" content="Free online tool to check phone number format, validate country codes, and convert numbers to E.164 standard. Instant results.">
+<meta property="og:site_name" content="888 Number Check">
+<meta property="og:image" content="https://numbercheck.live/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Phone Number Format Checker">
+<meta name="twitter:description" content="Validate phone number format, country codes, and convert to E.164 standard. Free online tool.">
+<meta name="twitter:image" content="https://numbercheck.live/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Phone Number Format Checker",
+  "url": "https://numbercheck.live/tools/phone-number-format-checker.html",
+  "description": "Free online tool to check phone number format, validate country codes, and convert to E.164 standard.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://numbercheck.live/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://numbercheck.live/tools/" },
+    { "@type": "ListItem", "position": 3, "name": "Phone Number Format Checker" }
+  ]
+}
+</script>
+<style>
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; color: #1d1d1f; background: #fafafa; margin: 0; padding: 0; line-height: 1.8; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+  .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+  .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .back:hover { text-decoration: underline; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
+  .sub { color: #6e6e73; font-size: 17px; margin-bottom: 40px; }
+  .tool-box { background: #fff; border-radius: 24px; padding: 36px; border: 1px solid #e5e5ea; margin-bottom: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.04); }
+  .tool-box label { display: block; font-size: 15px; font-weight: 600; margin-bottom: 8px; color: #1d1d1f; }
+  .tool-box input[type="text"] {
+    width: 100%; padding: 16px 20px; border: 2px solid #e5e5ea; border-radius: 16px;
+    font-size: 20px; font-family: "SF Mono", "Fira Code", monospace; outline: none;
+    transition: border-color 0.3s; box-sizing: border-box;
+  }
+  .tool-box input[type="text"]:focus { border-color: #7C5CFC; }
+  .tool-box input[type="text"].valid { border-color: #10B981; }
+  .tool-box input[type="text"].invalid { border-color: #F43F5E; }
+  .btn {
+    display: inline-block; padding: 14px 36px; border-radius: 14px; font-size: 16px;
+    font-weight: 600; border: none; cursor: pointer; touch-action: manipulation;
+    transition: all 0.3s; background: linear-gradient(135deg, #7C5CFC, #6366F1);
+    color: #fff; margin-top: 16px;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(99,102,241,0.3); }
+  .btn:active { transform: scale(0.97); }
+  .result { margin-top: 20px; padding: 20px 24px; border-radius: 16px; display: none; }
+  .result.show { display: block; }
+  .result.success { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .result.error { background: #fef2f2; border: 1px solid #fecaca; }
+  .result.warn { background: #fffbeb; border: 1px solid #fde68a; }
+  .result-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .result-row:last-child { border-bottom: none; }
+  .result-label { font-size: 14px; color: #6e6e73; }
+  .result-value { font-size: 16px; font-weight: 600; }
+  .result-value.good { color: #10B981; }
+  .result-value.bad { color: #F43F5E; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .badge.green { background: #d1fae5; color: #065f46; }
+  .badge.red { background: #fee2e2; color: #991b1b; }
+  h2 { font-size: 26px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.5px; }
+  h3 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+  p { margin: 0 0 18px; font-size: 17px; color: #333; }
+  ul, ol { margin: 0 0 24px; padding-left: 24px; }
+  li { margin-bottom: 8px; font-size: 16px; color: #333; }
+  code { background: #f0f0f5; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-family: "SF Mono", "Fira Code", monospace; }
+  .cta-box { background: linear-gradient(135deg, #7C5CFC, #6366F1); color: #fff; padding: 32px; border-radius: 20px; margin: 48px 0 0; text-align: center; }
+  .cta-box h2 { color: #fff; margin: 0 0 8px; font-size: 24px; }
+  .cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 16px; }
+  .cta-box a { display: inline-block; background: #fff; color: #7C5CFC; padding: 14px 36px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; transition: transform 0.3s; }
+  .cta-box a:hover { transform: scale(1.05); }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .example-btn { padding: 8px 16px; background: #f0f0f5; border: none; border-radius: 20px; font-size: 13px; cursor: pointer; touch-action: manipulation; transition: all 0.2s; }
+  .example-btn:hover { background: #e5e5ea; }
+  footer { text-align: center; padding: 48px 0; color: #aeaeb2; font-size: 13px; border-top: 1px solid #e5e5ea; margin-top: 64px; }
+  footer a { color: #7C5CFC; }
+  a { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 32px 16px; }
+    h1 { font-size: 26px; } h2 { font-size: 21px; }
+    .tool-box { padding: 24px 20px; }
+    .tool-box input[type="text"] { font-size: 17px; padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <h1>Free Phone Number Format Checker</h1>
+  <p class="sub">Validate international phone numbers, check country codes, and convert to E.164 format 鈥?instantly and free.</p>
+
+  <div class="tool-box">
+    <label for="phoneInput">Enter a phone number (any format)</label>
+    <div class="examples">
+      <button class="example-btn" onclick="checkExample('+12125550123')">+12125550123</button>
+      <button class="example-btn" onclick="checkExample('+8613800138000')">+8613800138000</button>
+      <button class="example-btn" onclick="checkExample('+66812345678')">+66812345678</button>
+      <button class="example-btn" onclick="checkExample('+447700900123')">+447700900123</button>
+      <button class="example-btn" onclick="checkExample('+919876543210')">+919876543210</button>
+      <button class="example-btn" onclick="checkExample('15551234567')">15551234567</button>
+    </div>
+    <input type="text" id="phoneInput" placeholder="e.g. +12125550123" autocomplete="off" oninput="autoCheck()">
+    <button class="btn" onclick="checkNumber()">Check Format</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <h2>How to Use This Tool</h2>
+  <ol>
+    <li><strong>Paste a phone number</strong> in any format 鈥?with or without country code, spaces, dashes, whatever.</li>
+    <li><strong>Click "Check Format"</strong> or just type 鈥?it validates in real time.</li>
+    <li><strong>See results instantly:</strong> country detected, format validity, E.164 conversion, and digit count check.</li>
+  </ol>
+  <p>This tool uses the international E.164 standard to validate phone numbers. See our <a href="/blog/phone-number-format-guide-by-country.html" style="color:#7C5CFC;">complete country format guide</a> for detailed reference tables covering 50+ countries.</p>
+
+  <h2>What This Tool Checks</h2>
+  <ul>
+    <li><strong>Country Code</strong> 鈥?Detects and validates the international dialing prefix</li>
+    <li><strong>Digit Count</strong> 鈥?Checks against expected length ranges for each country</li>
+    <li><strong>Format Validity</strong> 鈥?Identifies invalid characters, missing codes, or structural problems</li>
+    <li><strong>E.164 Conversion</strong> 鈥?Outputs the number in standard international format</li>
+  </ul>
+  <p>Format checking is step one. For full validation 鈥?checking whether a number is actually active and in service 鈥?use a <a href="/blog/phone-number-verification-api-integration-guide.html" style="color:#7C5CFC;">verification API</a> or <a href="https://numbercheck.live" style="color:#7C5CFC;">bulk detection platform</a>.</p>
+
+  <div class="cta-box">
+    <h2>Need to Validate Thousands of Numbers?</h2>
+    <p>This free tool is great for one-off checks. For bulk validation of entire contact lists, use 888 Number Check 鈥?200+ countries, 99.99% accuracy, API available.</p>
+    <a href="https://numbercheck.live">Start Bulk Validation</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 <a href="https://numbercheck.live">888 Number Check</a> &mdash; Overseas APP Number Detection &amp; Real-Time Verification<br>
+  <a href="/blog/">Blog</a> &middot; <a href="https://t.me/ayongzhanshen">Telegram</a> &middot; <a href="https://wa.me/66834280288">WhatsApp</a> &middot; <a href="https://www.facebook.com/888NumberCheck">Facebook</a>
+</footer>
+
+<script>
+const COUNTRY_DATA = {
+  '1': {name:'US/Canada', min:10, max:11}, '7': {name:'Russia/Kazakhstan', min:10, max:10},
+  '20': {name:'Egypt', min:10, max:10}, '27': {name:'South Africa', min:9, max:9},
+  '30': {name:'Greece', min:10, max:10}, '31': {name:'Netherlands', min:9, max:9},
+  '32': {name:'Belgium', min:9, max:9}, '33': {name:'France', min:9, max:9},
+  '34': {name:'Spain', min:9, max:9}, '36': {name:'Hungary', min:9, max:9},
+  '39': {name:'Italy', min:10, max:10}, '40': {name:'Romania', min:9, max:9},
+  '41': {name:'Switzerland', min:9, max:9}, '43': {name:'Austria', min:10, max:10},
+  '44': {name:'UK', min:10, max:10}, '45': {name:'Denmark', min:8, max:8},
+  '46': {name:'Sweden', min:9, max:9}, '47': {name:'Norway', min:8, max:8},
+  '48': {name:'Poland', min:9, max:9}, '49': {name:'Germany', min:11, max:11},
+  '51': {name:'Peru', min:9, max:9}, '52': {name:'Mexico', min:10, max:10},
+  '54': {name:'Argentina', min:10, max:10}, '55': {name:'Brazil', min:11, max:11},
+  '56': {name:'Chile', min:9, max:9}, '57': {name:'Colombia', min:10, max:10},
+  '58': {name:'Venezuela', min:10, max:10}, '60': {name:'Malaysia', min:9, max:10},
+  '61': {name:'Australia', min:9, max:9}, '62': {name:'Indonesia', min:10, max:12},
+  '63': {name:'Philippines', min:10, max:10}, '64': {name:'New Zealand', min:9, max:10},
+  '65': {name:'Singapore', min:8, max:8}, '66': {name:'Thailand', min:9, max:9},
+  '81': {name:'Japan', min:10, max:10}, '82': {name:'South Korea', min:10, max:10},
+  '84': {name:'Vietnam', min:9, max:10}, '86': {name:'China', min:11, max:11},
+  '90': {name:'Turkey', min:10, max:10}, '91': {name:'India', min:10, max:10},
+  '92': {name:'Pakistan', min:10, max:10}, '94': {name:'Sri Lanka', min:9, max:9},
+  '95': {name:'Myanmar', min:8, max:10}, '98': {name:'Iran', min:10, max:10},
+  '212': {name:'Morocco', min:9, max:9}, '213': {name:'Algeria', min:9, max:9},
+  '216': {name:'Tunisia', min:8, max:8}, '218': {name:'Libya', min:9, max:9},
+  '220': {name:'Gambia', min:7, max:7}, '221': {name:'Senegal', min:9, max:9},
+  '222': {name:'Mauritania', min:8, max:8}, '223': {name:'Mali', min:8, max:8},
+  '224': {name:'Guinea', min:9, max:9}, '225': {name:'Ivory Coast', min:8, max:8},
+  '226': {name:'Burkina Faso', min:8, max:8}, '227': {name:'Niger', min:8, max:8},
+  '228': {name:'Togo', min:8, max:8}, '229': {name:'Benin', min:8, max:8},
+  '230': {name:'Mauritius', min:7, max:7}, '231': {name:'Liberia', min:7, max:8},
+  '232': {name:'Sierra Leone', min:8, max:8}, '233': {name:'Ghana', min:9, max:9},
+  '234': {name:'Nigeria', min:10, max:10}, '235': {name:'Chad', min:8, max:8},
+  '236': {name:'CAR', min:8, max:8}, '237': {name:'Cameroon', min:9, max:9},
+  '238': {name:'Cape Verde', min:7, max:7}, '239': {name:'Sao Tome', min:7, max:7},
+  '240': {name:'Eq Guinea', min:9, max:9}, '241': {name:'Gabon', min:7, max:7},
+  '242': {name:'Congo', min:9, max:9}, '243': {name:'DR Congo', min:9, max:9},
+  '244': {name:'Angola', min:9, max:9}, '245': {name:'Guinea-Bissau', min:7, max:7},
+  '246': {name:'Diego Garcia', min:7, max:7}, '247': {name:'Ascension', min:4, max:4},
+  '248': {name:'Seychelles', min:7, max:7}, '249': {name:'Sudan', min:9, max:9},
+  '250': {name:'Rwanda', min:9, max:9}, '251': {name:'Ethiopia', min:9, max:9},
+  '252': {name:'Somalia', min:8, max:9}, '253': {name:'Djibouti', min:8, max:8},
+  '254': {name:'Kenya', min:9, max:9}, '255': {name:'Tanzania', min:9, max:9},
+  '256': {name:'Uganda', min:9, max:9}, '257': {name:'Burundi', min:8, max:8},
+  '258': {name:'Mozambique', min:9, max:9}, '260': {name:'Zambia', min:9, max:9},
+  '261': {name:'Madagascar', min:9, max:9}, '262': {name:'Reunion', min:9, max:9},
+  '263': {name:'Zimbabwe', min:9, max:9}, '264': {name:'Namibia', min:9, max:9},
+  '265': {name:'Malawi', min:9, max:9}, '266': {name:'Lesotho', min:8, max:8},
+  '267': {name:'Botswana', min:8, max:8}, '268': {name:'Eswatini', min:8, max:8},
+  '269': {name:'Comoros', min:7, max:7}, '290': {name:'St Helena', min:4, max:4},
+  '291': {name:'Eritrea', min:7, max:7}, '297': {name:'Aruba', min:7, max:7},
+  '298': {name:'Faroe Islands', min:6, max:6}, '299': {name:'Greenland', min:6, max:6},
+  '350': {name:'Gibraltar', min:8, max:8}, '351': {name:'Portugal', min:9, max:9},
+  '352': {name:'Luxembourg', min:9, max:9}, '353': {name:'Ireland', min:9, max:9},
+  '354': {name:'Iceland', min:7, max:7}, '355': {name:'Albania', min:9, max:9},
+  '356': {name:'Malta', min:8, max:8}, '357': {name:'Cyprus', min:8, max:8},
+  '358': {name:'Finland', min:9, max:10}, '359': {name:'Bulgaria', min:9, max:9},
+  '370': {name:'Lithuania', min:8, max:8}, '371': {name:'Latvia', min:8, max:8},
+  '372': {name:'Estonia', min:8, max:8}, '373': {name:'Moldova', min:8, max:8},
+  '374': {name:'Armenia', min:8, max:8}, '375': {name:'Belarus', min:9, max:9},
+  '376': {name:'Andorra', min:6, max:6}, '377': {name:'Monaco', min:8, max:8},
+  '378': {name:'San Marino', min:10, max:10}, '379': {name:'Vatican', min:10, max:10},
+  '380': {name:'Ukraine', min:9, max:9}, '381': {name:'Serbia', min:9, max:9},
+  '382': {name:'Montenegro', min:8, max:8}, '383': {name:'Kosovo', min:8, max:8},
+  '385': {name:'Croatia', min:9, max:9}, '386': {name:'Slovenia', min:8, max:8},
+  '387': {name:'Bosnia', min:8, max:8}, '389': {name:'N Macedonia', min:8, max:8},
+  '420': {name:'Czech Republic', min:9, max:9}, '421': {name:'Slovakia', min:9, max:9},
+  '423': {name:'Liechtenstein', min:7, max:7}, '500': {name:'Falklands', min:5, max:5},
+  '501': {name:'Belize', min:7, max:7}, '502': {name:'Guatemala', min:8, max:8},
+  '503': {name:'El Salvador', min:8, max:8}, '504': {name:'Honduras', min:8, max:8},
+  '505': {name:'Nicaragua', min:8, max:8}, '506': {name:'Costa Rica', min:8, max:8},
+  '507': {name:'Panama', min:8, max:8}, '509': {name:'Haiti', min:8, max:8},
+  '591': {name:'Bolivia', min:8, max:8}, '592': {name:'Guyana', min:7, max:7},
+  '593': {name:'Ecuador', min:8, max:9}, '594': {name:'Fr Guiana', min:9, max:9},
+  '595': {name:'Paraguay', min:9, max:9}, '596': {name:'Martinique', min:9, max:9},
+  '597': {name:'Suriname', min:7, max:7}, '598': {name:'Uruguay', min:8, max:8},
+  '670': {name:'Timor-Leste', min:8, max:8}, '672': {name:'Antarctica', min:6, max:6},
+  '673': {name:'Brunei', min:7, max:7}, '674': {name:'Nauru', min:7, max:7},
+  '675': {name:'PNG', min:8, max:8}, '676': {name:'Tonga', min:7, max:7},
+  '677': {name:'Solomon Is', min:7, max:7}, '678': {name:'Vanuatu', min:7, max:7},
+  '679': {name:'Fiji', min:7, max:7}, '680': {name:'Palau', min:7, max:7},
+  '681': {name:'Wallis & Futuna', min:6, max:6}, '682': {name:'Cook Is', min:5, max:5},
+  '683': {name:'Niue', min:4, max:4}, '685': {name:'Samoa', min:7, max:7},
+  '686': {name:'Kiribati', min:8, max:8}, '687': {name:'New Caledonia', min:6, max:6},
+  '688': {name:'Tuvalu', min:5, max:5}, '689': {name:'Fr Polynesia', min:6, max:6},
+  '690': {name:'Tokelau', min:4, max:4}, '691': {name:'Micronesia', min:7, max:7},
+  '692': {name:'Marshall Is', min:7, max:7}, '850': {name:'North Korea', min:10, max:10},
+  '852': {name:'Hong Kong', min:8, max:8}, '853': {name:'Macau', min:8, max:8},
+  '855': {name:'Cambodia', min:9, max:9}, '856': {name:'Laos', min:10, max:10},
+  '880': {name:'Bangladesh', min:10, max:10}, '886': {name:'Taiwan', min:9, max:9},
+  '960': {name:'Maldives', min:7, max:7}, '961': {name:'Lebanon', min:8, max:8},
+  '962': {name:'Jordan', min:9, max:9}, '963': {name:'Syria', min:9, max:9},
+  '964': {name:'Iraq', min:10, max:10}, '965': {name:'Kuwait', min:8, max:8},
+  '966': {name:'Saudi Arabia', min:9, max:9}, '967': {name:'Yemen', min:9, max:9},
+  '968': {name:'Oman', min:8, max:8}, '970': {name:'Palestine', min:9, max:9},
+  '971': {name:'UAE', min:9, max:9}, '972': {name:'Israel', min:9, max:9},
+  '973': {name:'Bahrain', min:8, max:8}, '974': {name:'Qatar', min:8, max:8},
+  '975': {name:'Bhutan', min:8, max:8}, '976': {name:'Mongolia', min:8, max:8},
+  '977': {name:'Nepal', min:10, max:10}, '992': {name:'Tajikistan', min:9, max:9},
+  '993': {name:'Turkmenistan', min:8, max:8}, '994': {name:'Azerbaijan', min:9, max:9},
+  '995': {name:'Georgia', min:9, max:9}, '996': {name:'Kyrgyzstan', min:9, max:9},
+  '998': {name:'Uzbekistan', min:9, max:9}
+};
+
+function autoCheck() {
+  const v = document.getElementById('phoneInput').value.trim();
+  if (v.length >= 7) checkNumber();
+}
+
+function checkExample(num) {
+  document.getElementById('phoneInput').value = num;
+  checkNumber();
+  document.getElementById('phoneInput').focus();
+}
+
+function checkNumber() {
+  const raw = document.getElementById('phoneInput').value.trim();
+  const res = document.getElementById('result');
+  const inp = document.getElementById('phoneInput');
+
+  if (!raw) { res.classList.remove('show'); inp.className = ''; return; }
+
+  const cleaned = raw.replace(/[\s\-\(\)\.\,\;\:\[\]\{\}]/g, '');
+  const hasPlus = cleaned.startsWith('+');
+  const digitsOnly = cleaned.replace(/^\+/, '').replace(/\D/g, '');
+
+  if (digitsOnly.length < 4) {
+    showResult('error', [['Error','Number too short (less than 4 digits)']], []);
+    inp.className = 'invalid'; return;
+  }
+  if (/[a-zA-Z]/.test(raw)) {
+    showResult('error', [['Error','Number contains letters']], []);
+    inp.className = 'invalid'; return;
+  }
+
+  // Try to match country code
+  let country = null, cc = null;
+  const cc1 = digitsOnly.substring(0,1);
+  const cc2 = digitsOnly.substring(0,2);
+  const cc3 = digitsOnly.substring(0,3);
+
+  if (COUNTRY_DATA[cc3]) { country = COUNTRY_DATA[cc3]; cc = cc3; }
+  else if (COUNTRY_DATA[cc2]) { country = COUNTRY_DATA[cc2]; cc = cc2; }
+  else if (COUNTRY_DATA[cc1]) { country = COUNTRY_DATA[cc1]; cc = cc1; }
+
+  const localDigits = cc ? digitsOnly.substring(cc.length) : digitsOnly;
+  const e164 = '+' + digitsOnly;
+
+  const rows = [
+    ['Country', country ? country.name : 'Unknown', country],
+    ['Country Code', cc ? '+' + cc : 'Not detected', !!cc],
+    ['Digits (excl. code)', localDigits.length.toString(), null],
+    ['Expected Range', country ? country.min + ' - ' + country.max + ' digits' : 'N/A', null],
+    ['E.164 Format', e164, country && localDigits.length >= country.min && localDigits.length <= country.max],
+  ];
+
+  if (!country) {
+    showResult('warn', rows, []);
+    inp.className = '';
+  } else if (localDigits.length >= country.min && localDigits.length <= country.max) {
+    showResult('success', rows, ['Format looks valid']);
+    inp.className = 'valid';
+  } else {
+    showResult('error', rows, ['Digit count mismatch: expected ' + country.min + '-' + country.max + ', got ' + localDigits.length]);
+    inp.className = 'invalid';
+  }
+}
+
+function showResult(type, rows, msgs) {
+  const res = document.getElementById('result');
+  res.className = 'result show ' + type;
+  let html = '';
+  rows.forEach(([label, value, ok]) => {
+    const cls = ok === true ? 'good' : (ok === false ? 'bad' : '');
+    html += `<div class="result-row"><span class="result-label">${label}</span><span class="result-value ${cls}">${value}</span></div>`;
+  });
+  msgs.forEach(m => {
+    html += `<div style="margin-top:8px;"><span class="badge ${type==='success'?'green':'red'}">${type==='success'?'PASS':'FAIL'}</span> ${m}</div>`;
+  });
+  res.innerHTML = html;
+}
+</script>
+</body>
+</html>
