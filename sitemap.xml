@@ -37,6 +37,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://numbercheck.live/tools/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://numbercheck.live/tools/phone-number-format-checker.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
