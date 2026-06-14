@@ -1,18 +1,18 @@
-# 888 Number Check — Real-Time Phone Number Verification
+# 888 Number Check 鈥?Real-Time Phone Number Verification
 
 **Validate phone numbers across 200+ countries and 40+ apps.** Industry-leading 99.99% accuracy for WhatsApp detection, Telegram verification, bulk number validation, and SMS marketing list cleaning.
 
-**[numbercheck.live](https://numbercheck.live)** — Free online tools available.
+**[numbercheck.live](https://numbercheck.live)** 鈥?Free online tools available.
 
 ---
 
 ## What It Does
 
-- **WhatsApp Number Detection** — Check if numbers are registered on WhatsApp (personal/business accounts)
-- **Telegram Number Verification** — Verify Telegram account registration status
-- **Bulk Validation** — Process 100K+ numbers in under 5 minutes via API
-- **40+ App Coverage** — Facebook, Binance, Amazon, iOS, and more
-- **200+ Countries** — Full global coverage with local carrier interconnects
+- **WhatsApp Number Detection** 鈥?Check if numbers are registered on WhatsApp (personal/business accounts)
+- **Telegram Number Verification** 鈥?Verify Telegram account registration status
+- **Bulk Validation** 鈥?Process 100K+ numbers in under 5 minutes via API
+- **40+ App Coverage** 鈥?Facebook, Binance, Amazon, iOS, and more
+- **200+ Countries** 鈥?Full global coverage with local carrier interconnects
 
 ## Free Tools
 
@@ -34,7 +34,7 @@
 
 - [Homepage](https://numbercheck.live)
 - [How It Works](https://numbercheck.live/how-it-works.html)
-- [Blog — Guides & Articles](https://numbercheck.live/blog/)
+- [Blog 鈥?Guides & Articles](https://numbercheck.live/blog/)
 - [API Integration Guide](https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html)
 - [Country Format Reference](https://numbercheck.live/blog/phone-number-format-guide-by-country.html)
 
