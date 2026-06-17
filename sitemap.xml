@@ -90,6 +90,20 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- New SEO Landing Pages -->
+  <url>
+    <loc>https://numbercheck.live/phone-number-lookup.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/social-media-number-checker.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Resource Pages -->
   <url>
     <loc>https://numbercheck.live/ultimate-guide.html</loc>
