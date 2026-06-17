@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#fafafa">
 <meta name="format-detection" content="telephone=no">
-<title>Phone Number Verification API 鈥?Complete Integration Guide for Developers | 888 Number Check</title>
+<title>Phone Number Verification API —Complete Integration Guide for Developers | 888 Number Check</title>
 <meta name="description" content="Complete developer guide to integrating phone number verification APIs. Covers REST endpoints, SDK setup in Python/Node.js/PHP/Go, webhook callbacks, error handling, and bulk processing best practices.">
 <meta name="keywords" content="phone verification API, number validation API, verify phone number API, bulk phone validation integration, developer API guide, REST API phone check">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://numbercheck.live/blog/phone-number-verification-api-integration-guide.html">
-<meta property="og:title" content="Phone Number Verification API 鈥?Complete Integration Guide for Developers">
+<meta property="og:title" content="Phone Number Verification API —Complete Integration Guide for Developers">
 <meta property="og:description" content="Complete developer guide to integrating phone number verification APIs. REST endpoints, SDK examples, webhook callbacks, and bulk processing.">
 <meta property="og:site_name" content="888 Number Check">
 <meta property="og:image" content="https://numbercheck.live/og-image.png">
@@ -22,14 +22,14 @@
 <meta property="article:modified_time" content="2026-06-17T08:00:00+00:00">
 <meta property="article:author" content="888 Number Check">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Phone Number Verification API 鈥?Integration Guide">
+<meta name="twitter:title" content="Phone Number Verification API —Integration Guide">
 <meta name="twitter:description" content="Complete developer guide: REST endpoints, SDK examples in Python/Node.js/PHP/Go, webhook callbacks, and bulk processing.">
 <meta name="twitter:image" content="https://numbercheck.live/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Phone Number Verification API 鈥?Complete Integration Guide for Developers",
+  "headline": "Phone Number Verification API —Complete Integration Guide for Developers",
   "description": "Complete developer guide to integrating phone number verification APIs. REST endpoints, SDK examples, webhook callbacks, and bulk processing best practices.",
   "author": { "@type": "Organization", "name": "888 Number Check", "url": "https://numbercheck.live" },
   "publisher": { "@type": "Organization", "name": "888 Number Check", "url": "https://numbercheck.live" },
@@ -101,7 +101,7 @@
 <body>
 <div class="container">
   <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
-  <h1>Phone Number Verification API 鈥?Complete Integration Guide</h1>
+  <h1>Phone Number Verification API —Complete Integration Guide</h1>
   <p class="meta">June 13, 2026 &middot; 8 min read &middot; <a href="/blog/" style="color:#7C5CFC;">Blog</a></p>
 
   <div class="toc">
@@ -248,10 +248,10 @@ def handle_batch_complete():
   <h2 id="errors">Error Handling &amp; Rate Limits</h2>
   <h3>Common Error Codes</h3>
   <ul>
-    <li><code>401</code> 鈥?Invalid or expired API key. Check your authorization header.</li>
-    <li><code>429</code> 鈥?Rate limit exceeded. Slow down and implement exponential backoff.</li>
-    <li><code>422</code> 鈥?Invalid input. The number format is malformed or missing required fields.</li>
-    <li><code>500</code> 鈥?Server error. Retry with backoff; alert if it persists.</li>
+    <li><code>401</code> —Invalid or expired API key. Check your authorization header.</li>
+    <li><code>429</code> —Rate limit exceeded. Slow down and implement exponential backoff.</li>
+    <li><code>422</code> —Invalid input. The number format is malformed or missing required fields.</li>
+    <li><code>500</code> —Server error. Retry with backoff; alert if it persists.</li>
   </ul>
   <h3>Rate Limit Best Practices</h3>
   <p>Enterprise plans typically allow 10,000+ requests per minute. For bulk processing, batch your requests (100K numbers per call) rather than making thousands of individual verification calls. It's faster, cheaper, and stays within rate limits.</p>
