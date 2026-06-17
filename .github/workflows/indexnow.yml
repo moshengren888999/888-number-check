@@ -1,0 +1,25 @@
+name: IndexNow Submission
+
+on:
+  push:
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+  workflow_dispatch:
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Bing & Yandex via IndexNow
+        run: |
+          # Submit sitemap as primary discovery
+          curl -s -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"numbercheck.live\",\"key\":\"9a64334ead841e8b4c4b38a0f7b44ae5\",\"urlList\":[\"https://numbercheck.live/sitemap.xml\"]}" \
+            -w "Bing: %{http_code}\n"
+
+          curl -s -X POST "https://yandex.com/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"numbercheck.live\",\"key\":\"9a64334ead841e8b4c4b38a0f7b44ae5\",\"urlList\":[\"https://numbercheck.live/sitemap.xml\"]}" \
+            -w "Yandex: %{http_code}\n" || true
