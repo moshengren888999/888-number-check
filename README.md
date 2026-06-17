@@ -90,7 +90,7 @@ SEO-optimized guides for phone number management:
 
 - **Website**: [numbercheck.live](https://numbercheck.live)
 - **Telegram**: [@ayongzhanshen](https://t.me/ayongzhanshen)
-- **WhatsApp**: [+66 834280288](https://wa.me/66834280288)
+
 - **Facebook**: [888NumberCheck](https://www.facebook.com/888NumberCheck)
 
 ---
