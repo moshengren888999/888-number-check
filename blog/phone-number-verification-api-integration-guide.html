@@ -76,6 +76,11 @@
   .endpoint { background: #fff; border: 1px solid #e5e5ea; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
   .endpoint .method { background: #10B981; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; font-family: "SF Mono", monospace; }
   .endpoint .path { font-size: 15px; font-weight: 600; font-family: "SF Mono", monospace; }
+  .related { background: #fff; padding: 24px 28px; border-radius: 16px; margin: 48px 0 0; border: 1px solid #e5e5ea; }
+  .related h3 { margin: 0 0 12px; font-size: 17px; color: #7C5CFC; }
+  .related a { display: block; color: #1d1d1f; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #f0f0f5; font-size: 15px; font-weight: 500; }
+  .related a:last-child { border-bottom: none; }
+  .related a:hover { color: #7C5CFC; }
   .cta-box { background: linear-gradient(135deg, #7C5CFC, #6366F1); color: #fff; padding: 32px; border-radius: 20px; margin: 48px 0 0; text-align: center; }
   .cta-box h2 { color: #fff; margin: 0 0 8px; font-size: 24px; }
   .cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 16px; }
@@ -251,6 +256,14 @@ def handle_batch_complete():
   <h3>Rate Limit Best Practices</h3>
   <p>Enterprise plans typically allow 10,000+ requests per minute. For bulk processing, batch your requests (100K numbers per call) rather than making thousands of individual verification calls. It's faster, cheaper, and stays within rate limits.</p>
   <p>See our <a href="/blog/how-to-clean-phone-number-list-marketing.html" style="color:#7C5CFC;">data cleaning guide</a> for the full pre-validation workflow, and the <a href="/blog/phone-number-format-guide-by-country.html" style="color:#7C5CFC;">country format reference</a> for number formatting rules.</p>
+
+  <div class="related">
+    <h3>Related Articles</h3>
+    <a href="/blog/how-to-verify-whatsapp-numbers-in-bulk.html">How to Verify WhatsApp Numbers in Bulk</a>
+    <a href="/blog/how-to-clean-phone-number-list-marketing.html">How to Clean a Phone Number List</a>
+    <a href="/blog/international-sms-marketing-guide.html">International SMS Marketing Guide</a>
+    <a href="/how-it-works.html">How Phone Validation Works</a>
+  </div>
 
   <div class="cta-box">
     <h2>Ready to Integrate?</h2>

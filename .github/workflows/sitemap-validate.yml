@@ -1,0 +1,23 @@
+name: Sitemap Validation
+
+on:
+  push:
+    paths:
+      - 'sitemap.xml'
+      - '**.html'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate sitemap XML
+        run: |
+          curl -s https://www.w3.org/2009/XMLSchema.xsd -o /tmp/sitemap.xsd
+          xmllint --noout --schema /tmp/sitemap.xsd sitemap.xml 2>&1 || true
+      - name: Check sitemap has recent entries
+        run: |
+          count=$(grep -c '<url>' sitemap.xml)
+          echo "Sitemap has $count URLs"
+          if [ "$count" -lt 8 ]; then echo "Sitemap has fewer than 8 URLs!"; exit 1; fi

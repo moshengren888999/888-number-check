@@ -1,0 +1,15 @@
+# humans.txt for numbercheck.live
+# 888 Number Check - Real-Time Phone Number Verification
+
+/* TEAM */
+  Founder: moshengren888999
+  Contact: Telegram @ayongzhanshen
+  Contact: WhatsApp +66834280288
+  From: Worldwide
+
+/* SITE */
+  Last update: 2026-06-17
+  Language: English
+  Standards: HTML5, CSS3, JavaScript
+  Components: JSON-LD, Open Graph, Twitter Cards
+  Software: GitHub Pages, Cloudflare CDN

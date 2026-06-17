@@ -1,0 +1,30 @@
+{
+  "name": "888 Number Check - Phone Number Verification",
+  "short_name": "888 Number Check",
+  "description": "Free online phone number verification across 200+ countries and 40+ apps. WhatsApp, Telegram, bulk validation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#7C5CFC",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%237C5CFC'/><text x='32' y='46' font-size='38' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%237C5CFC'/><text x='90' y='125' font-size='110' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "utilities", "developer tools"],
+  "lang": "en"
+}

@@ -1,0 +1,20 @@
+name: Dead Link Check
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'  # Every Monday at 3am UTC
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check sitemap links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-concurrency 10 'https://numbercheck.live/sitemap.xml'
+          fail: true
+      - name: Report results
+        if: failure()
+        run: echo "Broken links found. Check the report above."
