@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fafafa">
+<meta name="format-detection" content="telephone=no">
+<title>Phone Number Verification API — RESTful Number Validation | WhatsApp & Telegram Detection | 888 Number Check</title>
+<meta name="description" content="RESTful phone number verification API — validate numbers, check WhatsApp & Telegram registration, detect carriers. Python, Node.js, PHP, Go SDKs. Webhook callbacks, async batch processing. 99.99% accuracy, 200+ countries.">
+<meta name="keywords" content="phone number verification API, phone validation API, WhatsApp detection API, Telegram verification API, number lookup API, bulk phone validation API, carrier lookup API, phone number REST API, number verification SDK">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://numbercheck.live/phone-verification-api.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://numbercheck.live/phone-verification-api.html">
+<meta property="og:title" content="Phone Number Verification API — RESTful Number Validation | 888 Number Check">
+<meta property="og:description" content="RESTful phone verification API. Validate numbers, check WhatsApp & Telegram. Python, Node.js, PHP, Go SDKs. 99.99% accuracy.">
+<meta property="og:site_name" content="888 Number Check">
+<meta property="og:image" content="https://numbercheck.live/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phone Number Verification API — RESTful Number Validation">
+<meta name="twitter:description" content="Phone verification API for developers. Python, Node.js, PHP, Go SDKs. WhatsApp & Telegram detection.">
+<meta name="twitter:image" content="https://numbercheck.live/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Phone Number Verification API",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web",
+  "description": "RESTful phone number verification API supporting 200+ countries, 40+ apps (WhatsApp, Telegram, Facebook). Python, Node.js, PHP, Go SDKs with webhook callbacks.",
+  "url": "https://numbercheck.live/phone-verification-api.html",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "author": {"@type": "Organization", "name": "888 Number Check", "url": "https://numbercheck.live"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is a phone number verification API?", "acceptedAnswer": {"@type": "Answer", "text": "A phone number verification API is a RESTful web service that programmatically validates phone numbers. It checks format validity (E.164 standard), carrier status (HLR lookup), line type (mobile/landline/VoIP), and app registration status (WhatsApp, Telegram, Facebook, etc.). Developers integrate it via HTTP requests to validate numbers in real-time or batch."}},
+    {"@type": "Question", "name": "What SDKs and languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "We provide official SDKs for Python, Node.js, PHP, and Go. The API is RESTful and language-agnostic — any language that can make HTTP requests (Java, Ruby, C#, Rust, etc.) can integrate directly. See the API integration guide for code examples and quickstart tutorials."}},
+    {"@type": "Question", "name": "How does the bulk verification API work?", "acceptedAnswer": {"@type": "Answer", "text": "The bulk API accepts arrays of phone numbers via POST request, processes them in parallel across multiple carrier APIs, and returns structured JSON results classifying each number as active, inactive, or invalid. For large batches (10K+), use the async endpoint with webhook callbacks. Processing speed: 100K numbers in under 5 minutes."}},
+    {"@type": "Question", "name": "Is there a free tier for the phone verification API?", "acceptedAnswer": {"@type": "Answer", "text": "We offer free web-based tools for individual number checks. For API access, plans start at $1 per 10,000 verifications. Contact us on Telegram (@ayongzhanshen) for developer accounts, testing credits, and enterprise pricing with custom SLAs."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://numbercheck.live/"},
+    {"@type": "ListItem", "position": 2, "name": "Phone Verification API"}
+  ]
+}
+</script>
+<style>
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; color: #1d1d1f; background: #fafafa; margin: 0; padding: 0; line-height: 1.8; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+  .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+  .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .back:hover { text-decoration: underline; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
+  h2 { font-size: 24px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.5px; }
+  h3 { font-size: 18px; font-weight: 700; margin: 32px 0 12px; }
+  .sub { color: #6e6e73; font-size: 18px; margin-bottom: 40px; line-height: 1.6; }
+  p, li { font-size: 16px; color: #333; margin: 0 0 16px; }
+  ul, ol { padding-left: 24px; margin: 0 0 16px; }
+  ul li, ol li { margin-bottom: 8px; }
+  .card { background: #fff; border: 1px solid #e5e5ea; border-radius: 16px; padding: 32px; margin-bottom: 24px; }
+  .card h3 { margin-top: 0; }
+  pre { background: #1d1d1f; color: #e5e5ea; border-radius: 12px; padding: 20px 24px; overflow-x: auto; font-size: 14px; line-height: 1.6; margin: 16px 0; }
+  code { font-family: "SF Mono", "Fira Code", "Consolas", monospace; }
+  .sdk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 24px 0; }
+  .sdk-badge { background: #fff; border: 1px solid #e5e5ea; border-radius: 10px; padding: 20px 16px; text-align: center; font-weight: 700; font-size: 16px; transition: box-shadow 0.2s; }
+  .sdk-badge:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); border-color: #7C5CFC; }
+  .sdk-badge span { display: block; font-weight: 400; font-size: 13px; color: #6e6e73; margin-top: 4px; }
+  .endpoint { background: #f5f5f7; border-radius: 8px; padding: 12px 16px; margin: 8px 0; font-family: "SF Mono", "Consolas", monospace; font-size: 14px; }
+  .method { display: inline-block; background: #34C759; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; margin-right: 8px; }
+  details { background: #fff; border: 1px solid #e5e5ea; border-radius: 12px; margin-bottom: 12px; padding: 20px 24px; cursor: pointer; }
+  details:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+  details[open] { border-color: #7C5CFC; }
+  summary { font-weight: 700; font-size: 17px; outline: none; }
+  summary::-webkit-details-marker { display: none; }
+  details p { margin: 12px 0 0; }
+  footer { text-align: center; padding: 48px 0; color: #aeaeb2; font-size: 13px; border-top: 1px solid #e5e5ea; margin-top: 64px; }
+  footer a { color: #7C5CFC; }
+  a { -webkit-tap-highlight-color: transparent; color: #7C5CFC; }
+  @media (max-width: 768px) {
+    .container { padding: 36px 16px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 21px; }
+    .card { padding: 20px; }
+    .sdk-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <h1>Phone Number Verification API</h1>
+  <p class="sub"><strong>RESTful phone number verification API</strong> — validate numbers, check WhatsApp &amp; Telegram registration, detect carriers, and verify 40+ apps programmatically. Python, Node.js, PHP, Go SDKs. 99.99% accuracy across 200+ countries.</p>
+
+  <div class="highlight-box" style="background:linear-gradient(135deg,#1d1d1f,#333);color:#fff;border-radius:16px;padding:32px;margin:32px 0;">
+    <h2 style="color:#fff;margin-top:0;">Developer-First Phone Verification</h2>
+    <p style="color:rgba(255,255,255,0.85);">Simple REST API with SDKs for Python, Node.js, PHP & Go. Webhook callbacks. Async batch processing. Start in 5 minutes.</p>
+    <a href="blog/phone-number-verification-api-integration-guide.html" style="display:inline-block;background:#7C5CFC;color:#fff;padding:14px 32px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;">Read Integration Guide</a>
+  </div>
+
+  <h2>API Endpoints</h2>
+  <div class="endpoint"><span class="method">POST</span> <code>/api/v1/verify</code> — Single number verification</div>
+  <div class="endpoint"><span class="method">POST</span> <code>/api/v1/verify/bulk</code> — Bulk verification (up to 100K per batch)</div>
+  <div class="endpoint"><span class="method">POST</span> <code>/api/v1/verify/async</code> — Async verification with webhook callback</div>
+  <div class="endpoint"><span class="method">GET</span> <code>/api/v1/status/:job_id</code> — Check async job status</div>
+
+  <h2>Example Request</h2>
+  <pre><code>curl -X POST https://api.numbercheck.live/v1/verify \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "phone": "+12125551234",
+    "checks": ["whatsapp", "telegram", "carrier", "format"]
+  }'
+
+# Response
+{
+  "phone": "+12125551234",
+  "valid": true,
+  "country": "US",
+  "carrier": "Verizon Wireless",
+  "line_type": "mobile",
+  "whatsapp": true,
+  "telegram": true,
+  "whatsapp_business": false
+}</code></pre>
+
+  <h2>SDKs & Languages</h2>
+  <div class="sdk-grid">
+    <div class="sdk-badge">Python<span>pip install numbercheck</span></div>
+    <div class="sdk-badge">Node.js<span>npm i numbercheck</span></div>
+    <div class="sdk-badge">PHP<span>composer require numbercheck</span></div>
+    <div class="sdk-badge">Go<span>go get numbercheck</span></div>
+    <div class="sdk-badge">REST<span>Any HTTP client</span></div>
+  </div>
+
+  <h2>What the API Checks</h2>
+  <table>
+    <tr><th>Capability</th><th>Endpoint</th><th>Response Time</th></tr>
+    <tr><td>Format Validation (E.164)</td><td><code>/verify</code></td><td>&lt; 100ms</td></tr>
+    <tr><td>Carrier Detection (HLR)</td><td><code>/verify</code></td><td>&lt; 500ms</td></tr>
+    <tr><td>Line Type (Mobile/Landline/VoIP)</td><td><code>/verify</code></td><td>&lt; 100ms</td></tr>
+    <tr><td>WhatsApp Registration</td><td><code>/verify</code></td><td>&lt; 300ms</td></tr>
+    <tr><td>Telegram Registration</td><td><code>/verify</code></td><td>&lt; 300ms</td></tr>
+    <tr><td>40+ App Detection</td><td><code>/verify</code></td><td>&lt; 2s (all apps)</td></tr>
+    <tr><td>Bulk Verification</td><td><code>/verify/bulk</code></td><td>100K / 5 min</td></tr>
+    <tr><td>Async + Webhook</td><td><code>/verify/async</code></td><td>Webhook on completion</td></tr>
+  </table>
+
+  <h2>Why Choose This API</h2>
+  <div class="card"><h3>Multi-Source Verification</h3><p>Unlike APIs that only check format, our API performs <strong>multi-path verification</strong>: HLR lookups (carrier-level), SS7 signaling (network-level), and direct app API queries (platform-level). When one path fails, automatic fallback ensures maximum accuracy. <a href="how-it-works.html">How the technology works &rarr;</a></p></div>
+  <div class="card"><h3>Global Coverage</h3><p>200+ countries with local carrier interconnects. Reliable verification across Southeast Asia, Middle East, Latin America, Africa, and all major markets. Not just US/EU — we specialize in emerging markets where other APIs fail. <a href="blog/phone-number-format-guide-by-country.html">Country coverage guide &rarr;</a></p></div>
+  <div class="card"><h3>Developer Experience</h3><p>Clean RESTful design, consistent JSON responses, comprehensive error codes. SDKs for Python, Node.js, PHP, Go with full type hints. Webhook callbacks, async processing, rate limiting controls. Built by developers, for developers.</p></div>
+
+  <h2>Use Cases</h2>
+  <ul>
+    <li><strong>SMS & WhatsApp Marketing</strong> — Verify numbers before sending. Reduce bounce rates by 30%+.</li>
+    <li><strong>User Registration</strong> — Validate phone numbers at sign-up. Prevent fake accounts.</li>
+    <li><strong>CRM Enrichment</strong> — Flag inactive numbers, enrich with carrier and app presence data.</li>
+    <li><strong>Lead Verification</strong> — Check if lead phone numbers are real and active before sales outreach.</li>
+    <li><strong>Two-Factor Authentication</strong> — Ensure numbers can receive SMS before sending OTP codes.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>What is a phone number verification API?</summary>
+    <p>A phone number verification API is a RESTful web service that programmatically validates phone numbers. It checks format validity (E.164 standard), carrier status (HLR lookup), line type (mobile/landline/VoIP), and app registration status (WhatsApp, Telegram, Facebook, etc.). Developers integrate it via HTTP requests to validate numbers in real-time or batch.</p>
+  </details>
+  <details>
+    <summary>What SDKs and languages are supported?</summary>
+    <p>We provide official SDKs for Python, Node.js, PHP, and Go. The API is RESTful and language-agnostic — any language that can make HTTP requests (Java, Ruby, C#, Rust, etc.) can integrate directly. See the <a href="blog/phone-number-verification-api-integration-guide.html">API integration guide</a> for code examples and quickstart tutorials.</p>
+  </details>
+  <details>
+    <summary>How does the bulk verification API work?</summary>
+    <p>The bulk API accepts arrays of phone numbers via POST request, processes them in parallel across multiple carrier APIs, and returns structured JSON results classifying each number as active, inactive, or invalid. For large batches (10K+), use the async endpoint with webhook callbacks. Processing speed: 100K numbers in under 5 minutes.</p>
+  </details>
+  <details>
+    <summary>Is there a free tier for the phone verification API?</summary>
+    <p>We offer free web-based tools for individual number checks. For API access, plans start at $1 per 10,000 verifications. Contact us on Telegram (<a href="https://t.me/ayongzhanshen">@ayongzhanshen</a>) for developer accounts, testing credits, and enterprise pricing with custom SLAs.</p>
+  </details>
+  <details>
+    <summary>How accurate is the phone verification API?</summary>
+    <p>99.99% accuracy through multi-path verification: HLR (Home Location Register) lookups, SS7 signaling queries, and direct carrier API integrations. When one verification path fails, an automatic fallback verifies through an alternative channel. This ensures maximum reliability even in regions with unreliable carrier infrastructure.</p>
+  </details>
+</div>
+
+<footer>
+  &copy; 2026 <a href="https://numbercheck.live">888 Number Check</a> &mdash; Phone Number Verification &amp; Detection<br>
+  <a href="/blog/">Blog</a> &middot; <a href="/tools/">Tools</a> &middot; <a href="/how-it-works.html">How It Works</a> &middot; <a href="/faq.html">FAQ</a> &middot; <a href="/privacy-policy.html">Privacy</a> &middot; <a href="https://t.me/ayongzhanshen">Telegram</a>
+</footer>
+</body>
+</html>
