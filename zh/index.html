@@ -33,6 +33,7 @@
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%237C5CFC'/><text x='32' y='46' font-size='38' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>">
 <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%237C5CFC'/><text x='90' y='125' font-size='110' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>">
+<meta name="baidu-site-verification" content="codeva-REPLACE_WITH_BAIDU_CODE">
 <meta name="google-site-verification" content="HasyXoMZxiMrlgPM0BEBE-B1WmiSS86U8AeK_1_ZlGY">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
@@ -203,6 +204,19 @@ footer a { color: #7C5CFC; }
   .tools-grid { grid-template-columns: 1fr; }
 }
 </style>
+<script>
+(function(){
+  try {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var stored = localStorage.getItem('nc_lang');
+    if (stored) { if (stored === 'en' && window.location.pathname.indexOf('/zh/') === 0) { window.location.href = '/'; } return; }
+    if (!/^zh/.test(lang) && window.location.pathname.indexOf('/zh/') === 0) {
+      localStorage.setItem('nc_lang', 'en');
+      window.location.href = '/';
+    }
+  } catch(e) {}
+})();
+</script>
 </head>
 <body>
 <div class="container">
@@ -293,7 +307,7 @@ footer a { color: #7C5CFC; }
 
 <footer>
   &copy; 2026 <a href="https://numbercheck.live">888 Number Check</a> — 海外APP号码检测与实时验证<br>
-  <a href="/blog/">博客</a> · <a href="/tools/">工具</a> · <a href="/how-it-works.html">原理</a> · <a href="/faq.html">常见问题</a> ·
+  <a href="/zh/data/">数据市场</a> · <a href="/blog/">博客</a> · <a href="/tools/">工具</a> · <a href="/how-it-works.html">原理</a> · <a href="/faq.html">常见问题</a> ·
   <a href="https://t.me/ayongzhanshen">Telegram</a> ·
 </footer>
 

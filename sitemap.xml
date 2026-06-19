@@ -168,6 +168,20 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Data Marketplace -->
+  <url>
+    <loc>https://numbercheck.live/data/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Chinese Pages -->
   <url>
     <loc>https://numbercheck.live/zh/tools/</loc>

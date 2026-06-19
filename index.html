@@ -49,6 +49,11 @@
 <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="HasyXoMZxiMrlgPM0BEBE-B1WmiSS86U8AeK_1_ZlGY">
 <meta name="msvalidate.01" content="1EF396393F8A789F7F1B7D0E78D27311">
+<meta name="baidu-site-verification" content="codeva-REPLACE_WITH_BAIDU_CODE">
+<meta property="og:locale:alternate" content="zh_CN">
+<link rel="alternate" hreflang="zh" href="https://numbercheck.live/zh/">
+<link rel="alternate" hreflang="en" href="https://numbercheck.live/">
+<link rel="alternate" hreflang="x-default" href="https://numbercheck.live/">
 
 <!-- DNS Prefetch & Preconnect -->
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -767,6 +772,19 @@ img { max-width: 100%; display: block; }
   .faq-body { -webkit-overflow-scrolling: touch; }
 }
 </style>
+<script>
+(function(){
+  try {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var stored = localStorage.getItem('nc_lang');
+    if (stored) { if (stored === 'zh' && window.location.pathname.indexOf('/zh/') !== 0) { window.location.href = '/zh/'; } return; }
+    if (/^zh/.test(lang) && window.location.pathname.indexOf('/zh/') !== 0) {
+      localStorage.setItem('nc_lang', 'zh');
+      window.location.href = '/zh/';
+    }
+  } catch(e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -1093,6 +1111,7 @@ n	<!-- Tools & Resources -->
       <a href="/how-it-works.html">How It Works</a>
       <a href="/privacy-policy.html">Privacy</a>
       <a href="/zh/" hreflang="zh">中文</a>
+      <a href="/data/">Data Marketplace</a>
       <a href="/tools/phone-number-format-checker.html">Format Checker</a>
       <a href="/bulk-phone-number-validator.html">Bulk Validator</a>
       <a href="/phone-verification-api.html">API</a>
