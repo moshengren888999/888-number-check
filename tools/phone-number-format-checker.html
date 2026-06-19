@@ -44,6 +44,45 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question", "name": "What is E.164 phone number format?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "E.164 is the international standard for phone number formatting defined by ITU-T. It specifies a maximum of 15 digits including the country code, with no leading zeros or special characters. Example: +12125551234. E.164 is required by most carrier APIs, messaging platforms (WhatsApp, Telegram), and SMS gateways for reliable message delivery."
+      }
+    },{
+      "@type": "Question", "name": "How do I know which country a phone number belongs to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter the phone number into the format checker tool and it will automatically identify the country from the dialing prefix. Country codes follow ITU-T E.164 standards: +1 for US/Canada, +44 for UK, +86 for China, +91 for India, etc. The tool validates the country code and confirms the total digit count matches the expected range for that country."
+      }
+    },{
+      "@type": "Question", "name": "Why does my phone number fail format validation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common reasons: missing country code (add + and your country prefix), too many or too few digits (check against your country's expected digit count), leading zeros after country code (remove them), special characters in wrong positions (use digits only after the +), or using an unassigned country code. The format checker shows exactly which rule failed and how to fix it."
+      }
+    },{
+      "@type": "Question", "name": "Can I validate and format phone numbers in bulk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for bulk phone number formatting and validation, use the 888 Number Check bulk validator or REST API. Upload a CSV file and the system automatically standardizes all numbers to E.164 format, validates country codes, checks digit lengths, and flags malformed entries. The bulk API processes 100,000+ numbers in under 5 minutes."
+      }
+    },{
+      "@type": "Question", "name": "What's the difference between national and international phone number format?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "National format uses a trunk prefix (like 0) and is dialable only within the country (e.g., 0212 555 0123). International format replaces the trunk prefix with the country code and a + sign (e.g., +12125550123). The E.164 international standard is preferred for APIs, databases, and cross-border messaging because it uniquely identifies any phone number worldwide without ambiguity."
+      }
+    }
+  ]
+}
+</script>
 <style>
   html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
   body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif; color: #1d1d1f; background: #fafafa; margin: 0; padding: 0; line-height: 1.8; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
