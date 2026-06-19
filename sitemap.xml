@@ -154,6 +154,28 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- New Blog Posts -->
+  <url>
+    <loc>https://numbercheck.live/blog/how-to-detect-virtual-voip-phone-numbers.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/blog/phone-number-validation-best-practices.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Chinese Pages -->
+  <url>
+    <loc>https://numbercheck.live/zh/tools/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Utility Pages -->
   <url>
     <loc>https://numbercheck.live/search/</loc>
