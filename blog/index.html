@@ -89,6 +89,9 @@
   .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
   .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; -webkit-tap-highlight-color: transparent; }
   .back:hover { text-decoration: underline; }
+  .breadcrumb { font-size: 14px; color: #aeaeb2; margin-bottom: 16px; }
+  .breadcrumb a { color: #7C5CFC; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
   h1 { font-size: 36px; font-weight: 700; letter-spacing: -1px; margin: 24px 0 12px; }
   .sub { color: #6e6e73; font-size: 17px; margin-bottom: 48px; }
   .post { display: block; padding: 28px 0; border-bottom: 1px solid #e5e5ea; text-decoration: none; color: inherit; transition: all 0.3s; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
@@ -109,7 +112,9 @@
 </head>
 <body>
 <div class="container">
-  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; Blog
+  </nav>
   <h1>Blog</h1>
   <p class="sub">Number detection guides, industry insights, and optimization strategies.</p>
 

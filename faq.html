@@ -107,6 +107,9 @@
   .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
   .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
   .back:hover { text-decoration: underline; }
+  .breadcrumb { font-size: 14px; color: #aeaeb2; margin-bottom: 16px; }
+  .breadcrumb a { color: #7C5CFC; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
   h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
   .sub { color: #6e6e73; font-size: 17px; margin-bottom: 48px; }
   details { background: #fff; border: 1px solid #e5e5ea; border-radius: 12px; margin-bottom: 12px; padding: 20px 24px; cursor: pointer; transition: box-shadow 0.2s; }
@@ -129,7 +132,9 @@
 </head>
 <body>
 <div class="container">
-  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; FAQ
+  </nav>
   <h1>Frequently Asked Questions</h1>
   <p class="sub">Everything you need to know about phone number verification, WhatsApp checking, and bulk validation.</p>
 

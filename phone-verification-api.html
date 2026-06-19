@@ -62,6 +62,9 @@
   .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
   .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
   .back:hover { text-decoration: underline; }
+  .breadcrumb { font-size: 14px; color: #aeaeb2; margin-bottom: 16px; }
+  .breadcrumb a { color: #7C5CFC; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
   h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 8px; }
   h2 { font-size: 24px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.5px; }
   h3 { font-size: 18px; font-weight: 700; margin: 32px 0 12px; }
@@ -99,7 +102,9 @@
 </head>
 <body>
 <div class="container">
-  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; Phone Verification API
+  </nav>
   <h1>Phone Number Verification API</h1>
   <p class="sub"><strong>RESTful phone number verification API</strong> — validate numbers, check WhatsApp &amp; Telegram registration, detect carriers, and verify 40+ apps programmatically. Python, Node.js, PHP, Go SDKs. 99.99% accuracy across 200+ countries.</p>
 

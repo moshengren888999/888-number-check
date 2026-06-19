@@ -50,6 +50,9 @@
   .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
   .back { color: #7C5CFC; font-weight: 600; text-decoration: none; font-size: 15px; }
   .back:hover { text-decoration: underline; }
+  .breadcrumb { font-size: 14px; color: #aeaeb2; margin-bottom: 16px; }
+  .breadcrumb a { color: #7C5CFC; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
   h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin: 24px 0 8px; }
   .sub { color: #6e6e73; font-size: 17px; margin-bottom: 40px; }
   .resource-card { display: block; padding: 28px; border: 1px solid #e5e5ea; border-radius: 16px; text-decoration: none; color: inherit; margin-bottom: 16px; background: #fff; transition: all 0.3s; }
@@ -66,7 +69,9 @@
 </head>
 <body>
 <div class="container">
-  <a href="https://numbercheck.live" class="back">&larr; Back to 888 Number Check</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; Resources
+  </nav>
   <h1>Free Resources</h1>
   <p class="sub">Downloadable checklists, guides, and templates for phone number verification.</p>
 
