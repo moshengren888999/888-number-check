@@ -1,19 +1,13 @@
 {
-  "name": "888 Number Check - Phone Number Verification",
+  "name": "888 Number Check - Free Phone Number Verification",
   "short_name": "888 Number Check",
-  "description": "Free online phone number verification across 200+ countries and 40+ apps. WhatsApp, Telegram, bulk validation.",
+  "description": "Free phone number verification tool — check WhatsApp, Telegram, and 40+ apps across 200+ countries",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fafafa",
   "theme_color": "#7C5CFC",
   "orientation": "any",
   "icons": [
-    {
-      "src": "/og-image.png",
-      "sizes": "1200x630",
-      "type": "image/png",
-      "purpose": "any"
-    },
     {
       "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%237C5CFC'/><text x='32' y='46' font-size='38' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>",
       "sizes": "64x64",
@@ -23,8 +17,19 @@
       "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%237C5CFC'/><text x='90' y='125' font-size='110' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>",
       "sizes": "180x180",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%237C5CFC'/><text x='256' y='356' font-size='320' font-weight='800' text-anchor='middle' fill='white'>8</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
     }
   ],
-  "categories": ["business", "utilities", "developer tools"],
+  "shortcuts": [
+    { "name": "WhatsApp Checker", "url": "/tools/whatsapp-number-checker.html" },
+    { "name": "Telegram Checker", "url": "/tools/telegram-number-checker.html" },
+    { "name": "Format Checker", "url": "/tools/phone-number-format-checker.html" },
+    { "name": "Data Marketplace", "url": "/data/" }
+  ],
+  "categories": ["business", "utilities"],
   "lang": "en"
 }

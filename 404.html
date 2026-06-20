@@ -1,43 +1,52 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#fafafa">
+<meta name="format-detection" content="telephone=no">
 <meta name="robots" content="noindex">
-<title>Page Not Found | 888 Number Check</title>
+<title>Page Not Found — 888 Number Check</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
     color: #1d1d1f; background: #fafafa;
     display: flex; align-items: center; justify-content: center;
     min-height: 100vh; text-align: center; padding: 24px;
   }
-  .container { max-width: 480px; }
+  .container { max-width: 520px; }
   h1 { font-size: 72px; font-weight: 800; color: #7C5CFC; line-height: 1; }
   h2 { font-size: 24px; font-weight: 700; margin: 16px 0 8px; }
   p { color: #6e6e73; font-size: 16px; margin-bottom: 32px; line-height: 1.6; }
-  .links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
   .links a {
-    display: inline-block; padding: 12px 24px; border-radius: 12px;
-    font-weight: 600; font-size: 15px; text-decoration: none; transition: transform 0.2s;
+    display: inline-block; padding: 12px 22px; border-radius: 12px;
+    font-weight: 600; font-size: 14px; text-decoration: none; transition: transform 0.2s;
   }
   .links a:hover { transform: translateY(-2px); }
   .primary { background: #7C5CFC; color: #fff; }
   .secondary { background: #fff; color: #7C5CFC; border: 1.5px solid #7C5CFC; }
   .tertiary { background: #f0f0f5; color: #1d1d1f; }
+  @media (max-width: 480px) {
+    h1 { font-size: 56px; }
+    .links a { width: 100%; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>404</h1>
   <h2>Page Not Found</h2>
-  <p>The page you're looking for doesn't exist or has been moved. Try one of these instead:</p>
+  <p>The page you're looking for doesn't exist or has been moved.</p>
   <div class="links">
-    <a href="https://numbercheck.live/" class="primary">Go Home</a>
-    <a href="https://numbercheck.live/tools/" class="secondary">Free Tools</a>
-    <a href="https://numbercheck.live/blog/" class="tertiary">Blog</a>
+    <a href="/" class="primary">Homepage</a>
+    <a href="/tools/whatsapp-number-checker.html" class="secondary">WhatsApp Checker</a>
+    <a href="/tools/telegram-number-checker.html" class="secondary">Telegram Checker</a>
+    <a href="/tools/" class="tertiary">All Free Tools</a>
+    <a href="/blog/" class="tertiary">Blog</a>
+    <a href="/data/" class="tertiary">Data Marketplace</a>
   </div>
 </div>
 </body>

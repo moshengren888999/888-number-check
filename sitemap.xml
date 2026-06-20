@@ -54,6 +54,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://numbercheck.live/zh/blog/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://numbercheck.live/blog/how-to-verify-whatsapp-numbers-in-bulk.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -90,7 +96,21 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- New SEO Landing Pages -->
+  <!-- New Blog Posts -->
+  <url>
+    <loc>https://numbercheck.live/blog/how-to-detect-virtual-voip-phone-numbers.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/blog/phone-number-validation-best-practices.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SEO Landing Pages -->
   <url>
     <loc>https://numbercheck.live/phone-number-lookup.html</loc>
     <lastmod>2026-06-20</lastmod>
@@ -154,20 +174,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- New Blog Posts -->
-  <url>
-    <loc>https://numbercheck.live/blog/how-to-detect-virtual-voip-phone-numbers.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://numbercheck.live/blog/phone-number-validation-best-practices.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Data Marketplace -->
   <url>
     <loc>https://numbercheck.live/data/</loc>
@@ -182,7 +188,103 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Chinese Pages -->
+  <!-- Individual Data Product Pages (English) -->
+  <url>
+    <loc>https://numbercheck.live/data/whatsapp-numbers.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/data/telegram-numbers.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/data/binance-users.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/data/linkedin-leads.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/data/facebook-users.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/data/multi-platform.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Data Product Pages (Chinese) -->
+  <url>
+    <loc>https://numbercheck.live/zh/data/whatsapp-numbers.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/telegram-numbers.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/binance-users.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/linkedin-leads.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/facebook-users.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/data/multi-platform.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Chinese Infrastructure Pages -->
+  <url>
+    <loc>https://numbercheck.live/zh/how-it-works.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/faq.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://numbercheck.live/zh/privacy-policy.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Chinese Tools -->
   <url>
     <loc>https://numbercheck.live/zh/tools/</loc>
     <lastmod>2026-06-20</lastmod>
